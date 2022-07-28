@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+        /// Start added for FLUTTER
+        maven {
+            url '/Users/cartenz1/Work/Project/ProjectAndroidStudio/_me/eksperimen/Explore_FlutterModule/flutter_module/build/host/outputs/repo'
+        }
+        maven {
+            url 'https://storage.googleapis.com/download.flutter.io'
+        }
+        /// End added for FLUTTER
+    }
+}
+rootProject.name = "Explore_Flutter"
+include ':app'
